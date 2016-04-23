@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         buyButton = (Button) findViewById(R.id.buyButton);
         clickButton = (Button) findViewById(R.id.clickButton);
-        clickButton.setEnabled(false);
+        if (clickButton != null) {
+            clickButton.setEnabled(false);
+        }
         String base64EncodedPublicKey =
                 "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjnYNEUkKYZRITRq5gyTXOqI3XNyk1PZTd9DfyIG0Z7+mIwu24CIL53ROJ+zVN2PnsBbusQthZ8cTzagm4pzBAPGYbPC97eXAMU9Yf4/2NwGvjxvWxekfSsfoEfeWsKPrR6mNw0aBGo9wZZVBRSQt9Sdildwn6Hc1EEPqJ7FtDUUnIitA1s/pzPdb6vtQkwssBToAXxEKGEwfcMiGcDDjwFIkLVSPm/r68tuYWBUA8H59buYmlEgLRPVo31z1DCdn9bmoXoccDVZeOU7ShK/2KZzHJRkcJ+uOUMHYXknOiPRHpy//5h1ZJxQsXTbbUew6fcRixbKRX+CzDoCaeYvZuwIDAQAB";
 
